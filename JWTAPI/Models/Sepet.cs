@@ -11,7 +11,7 @@ namespace JWTAPI.Models
 		//public User User { get; set; }
 		public string Name { get; set; }
 		public double Price { get; set; }
-		public byte[] Photo { get; set; }
+		public string Photo { get; set; }
 		public int Id { get; set; }
 	}
 }

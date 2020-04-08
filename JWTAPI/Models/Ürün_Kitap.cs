@@ -9,7 +9,7 @@ namespace JWTAPI.Models
 	{
 		public int SubC_Id { get; set; } 
 		public int Id { get; set; }
-		public byte[] Photo { get; set; }
+		public string Photo { get; set; }
 		public double Point { get; set; }	
 		public string Name { get; set; }
 		public string Author { get; set; }	

@@ -13,5 +13,6 @@ namespace JWTAPI.Services
 		Task<IEnumerable<AAlt_Kategori>> ListAsync3();
 		Task<IEnumerable<Ürün_Kitap>> ListAsync4();
 		Task<IEnumerable<Ürün_Diğer>> ListAsync5();
+		Task<IEnumerable<Slider>> ListAsync6();
 	}
 }

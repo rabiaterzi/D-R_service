@@ -35,7 +35,8 @@ namespace JWTAPI.Controllers
                 Name = value.Name,
                 Photo = value.Photo,
                 Price = value.Price,
-            };           
+            };
+            _context.Sepettekiler.Add(urun);
             return Ok();
 
         }

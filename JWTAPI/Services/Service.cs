@@ -38,5 +38,10 @@ namespace JWTAPI.Services
 		{
 			return await _categoryRepository.ListAsync5();
 		}
+
+		public async Task<IEnumerable<Slider>> ListAsync6()
+		{
+			return await _categoryRepository.ListAsync6();
+		}
 	}
 }

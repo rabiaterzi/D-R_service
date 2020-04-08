@@ -39,5 +39,10 @@ namespace JWTAPI.Repositories
 		{
 			return await _context.Ürün_Diğerleri.ToListAsync();
 		}
+
+		public async Task<IEnumerable<Slider>> ListAsync6()
+		{
+			return await _context.Sliders.ToListAsync();
+		}
 	}
 }
