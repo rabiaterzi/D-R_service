@@ -13,8 +13,8 @@ namespace JWTAPI.Controllers
     [ApiController]
     public class SliderController : ControllerBase
     {
-        private readonly IService _categoryService;
-        public SliderController(IService categoryService)
+        private readonly IListingService _categoryService;
+        public SliderController(IListingService categoryService)
         {
             _categoryService = categoryService;
         }

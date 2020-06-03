@@ -7,10 +7,10 @@ using JWTAPI.Repositories;
 
 namespace JWTAPI.Services
 {
-	public class Service : IService
+	public class ListingService : IListingService
 	{
 		private readonly IRepository _categoryRepository;
-		public Service(IRepository categoryRepository)
+		public ListingService(IRepository categoryRepository)
 		{
 			this._categoryRepository = categoryRepository;
 		}

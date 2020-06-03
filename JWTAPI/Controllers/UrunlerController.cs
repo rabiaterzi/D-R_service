@@ -14,9 +14,9 @@ namespace JWTAPI.Controllers
     [ApiController]
     public class UrunlerController : ControllerBase
     {
-        private readonly IService _categoryService;
+        private readonly IListingService _categoryService;
         private DataContext _context;
-        public UrunlerController(DataContext context,IService categoryService)
+        public UrunlerController(DataContext context,IListingService categoryService)
         {
             _context = context;
             _categoryService = categoryService;

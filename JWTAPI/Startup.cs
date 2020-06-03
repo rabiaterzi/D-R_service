@@ -18,7 +18,6 @@ using Microsoft.IdentityModel.Tokens;
 using JWTAPI.Data;
 using JWTAPI.Repositories;
 
-
 namespace JWTAPI
 {
     public class Startup
@@ -38,7 +37,7 @@ namespace JWTAPI
                 options.UseInMemoryDatabase("jwtapi");
             });
             services.AddScoped<IRepository, Repository>();
-            services.AddScoped<IService, Service>();
+            services.AddScoped<IListingService, ListingService>();
            
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();

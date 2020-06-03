@@ -1,21 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\terzi\\OneDrive\\Masaüstü\\jwt-api-master\\src\\DR_API\\JWTAPI\\JWTAPI.csproj": {}
+    "C:\\Users\\terzi\\OneDrive\\Masaüstü\\ÖDEVLER\\rabia terzi-ece tokos\\dr_service\\src\\DR_API\\JWTAPI\\JWTAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\terzi\\OneDrive\\Masaüstü\\jwt-api-master\\src\\DR_API\\JWTAPI\\JWTAPI.csproj": {
+    "C:\\Users\\terzi\\OneDrive\\Masaüstü\\ÖDEVLER\\rabia terzi-ece tokos\\dr_service\\src\\DR_API\\JWTAPI\\JWTAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\terzi\\OneDrive\\Masaüstü\\jwt-api-master\\src\\DR_API\\JWTAPI\\JWTAPI.csproj",
+        "projectUniqueName": "C:\\Users\\terzi\\OneDrive\\Masaüstü\\ÖDEVLER\\rabia terzi-ece tokos\\dr_service\\src\\DR_API\\JWTAPI\\JWTAPI.csproj",
         "projectName": "JWTAPI",
-        "projectPath": "C:\\Users\\terzi\\OneDrive\\Masaüstü\\jwt-api-master\\src\\DR_API\\JWTAPI\\JWTAPI.csproj",
+        "projectPath": "C:\\Users\\terzi\\OneDrive\\Masaüstü\\ÖDEVLER\\rabia terzi-ece tokos\\dr_service\\src\\DR_API\\JWTAPI\\JWTAPI.csproj",
         "packagesPath": "C:\\Users\\terzi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\terzi\\OneDrive\\Masaüstü\\jwt-api-master\\src\\DR_API\\JWTAPI\\obj\\",
+        "outputPath": "C:\\Users\\terzi\\OneDrive\\Masaüstü\\ÖDEVLER\\rabia terzi-ece tokos\\dr_service\\src\\DR_API\\JWTAPI\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
           "C:\\Users\\terzi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.1"
@@ -63,13 +67,17 @@
             },
             "Microsoft.Extensions.Options": {
               "target": "Package",
-              "version": "[2.1.1, )"
+              "version": "[3.1.3, )"
             },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
               "target": "Package",
               "version": "[2.1.0, )",
               "autoReferenced": true
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.10.8, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",

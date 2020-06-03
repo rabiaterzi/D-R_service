@@ -1,12 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace JWTAPI.Models
 {
 	public class Ürün_Diğer
 	{
+		[Required]
 		public int Id { get; set; }
 		public string Photo { get; set; }
 		public double Point { get; set; }

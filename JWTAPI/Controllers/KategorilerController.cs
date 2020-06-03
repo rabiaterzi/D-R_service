@@ -19,10 +19,10 @@ namespace JWTAPI.Controllers
     [ApiController]
     public class KategorilerController : ControllerBase
     {
-        private readonly IService _categoryService;
+        private readonly IListingService _categoryService;
         private readonly IMapper _mapper;
         private DataContext _context;
-        public KategorilerController(IService categoryService,IMapper mapper,DataContext context)
+        public KategorilerController(IListingService categoryService,IMapper mapper,DataContext context)
         {
             _categoryService = categoryService;
             _mapper = mapper;
@@ -91,64 +91,6 @@ namespace JWTAPI.Controllers
         [HttpGet("kitap/edebiyat/sort={sort},{sort2}/mediatypes={media}/price={num1},{num2}")]
         public async Task<ActionResult> GetFilter(string sort,string sort2,string media,int num1,int num2)
         {
-            //var urun5 = _context.Ürün_Kitaplar.Where(x => x.Id > 0);
-            //var urun2 = from a in _context.Ürün_Kitaplar select urun1.FirstOrDefault(x => x.Id.Equals(a.Id));
-            //var urun3 = _context.Ürün_Kitaplar.FromSql("SELECT * FROM Ürün_Kitaplar Where Id=urun1.Id");
-            //await urun2.ToListAsync();
-           /* if (media==" ")
-          {     var urun4 = _context.Ürün_Kitaplar.Where(x => x.Id>0);
-                //var urun1 = from s in _context.Ürün_Kitaplar select s;
-                if (num1 == 0 && num2 == 0)
-                {
-                    
-                    await urun4.ToListAsync();
-                    if (sort == "price" && sort2 == "desc")
-                    {      
-                        var urun2 = urun4.OrderByDescending(x => x.Price);
-                        await urun2.ToListAsync();
-                        return Ok(urun2);
-                    }
-                    else if (sort == " " && sort2 == " ")
-                    {
-                        await urun4.ToListAsync();
-                        return Ok(urun4);
-                    }
-                    else if (sort == "price" && sort2 == "asc")
-                    {
-                        var urun2 = urun4.OrderBy(x => x.Price);
-                        await urun2.ToListAsync();
-                        return Ok(urun2);
-                    }
-                    else if (sort == "discount" && sort2 == "desc")
-                    {
-                        var urun2 = urun4.OrderByDescending(x => x.Discount);
-                        await urun2.ToListAsync();
-                        return Ok(urun2);
-                    }
-                    else if (sort == "discount" && sort2 == "asc")
-                    {
-                        var urun2 = urun4.OrderBy(x => x.Discount);
-                        await urun2.ToListAsync();
-                        return Ok(urun2);
-                    }
-                    else if (sort == "name" && sort2 == "desc")
-                    {
-                        var urun2 = urun4.OrderByDescending(x => x.Name);
-                        await urun2.ToListAsync();
-                        return Ok(urun2);
-                    }
-                    else if (sort == "name" && sort2 == "asc")
-                    {
-                        var urun2 = urun4.OrderBy(x => x.Name);
-                        await urun2.ToListAsync();
-                        return Ok(urun2);
-                    }
-                    
-
-                }return Ok(urun4);
-            }
-          else
-          {*/
                 var urun1 = _context.Ürün_Kitaplar.Where(x => x.CoverType.Equals(media));
             if(num1==0 && num2==0)                                                                 
             {

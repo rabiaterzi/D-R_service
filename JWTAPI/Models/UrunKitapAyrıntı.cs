@@ -8,6 +8,7 @@ namespace JWTAPI.Models
 {
 	public class UrunKitapAyrıntı
 	{
+		[Required]
 		[Key]
 		public int UrunId { get; set; }
 		public string Explanation { get; set; }

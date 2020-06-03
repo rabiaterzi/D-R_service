@@ -6,7 +6,7 @@ using JWTAPI.Models;
 
 namespace JWTAPI.Services
 {
-	public interface IService
+	public interface IListingService
 	{
 		Task<IEnumerable<Kategori>> ListAsync();
 		Task<IEnumerable<Alt_Kategori>> ListAsync2();
